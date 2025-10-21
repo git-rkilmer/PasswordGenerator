@@ -8,9 +8,7 @@ body {
     justify-content: center;
     margin: 0;
     height: 100vh;
-    width: 100vh;
     overflow: hidden;
-    box-sizing: border-box;
 }
 
 .noncentered-items {
