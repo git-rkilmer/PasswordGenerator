@@ -3,6 +3,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let givenPassword1 = document.querySelector("#password-1");
 let givenPassword2 = document.querySelector("#password-2");
+let givenPassword3 = document.querySelector("#password-3");
+let givenPassword4 = document.querySelector("#password-4");
 
 const randomIndexGenerator = () => {
     return Math.floor(Math.random() * characters.length);
@@ -20,8 +22,11 @@ const generatePassword = () => {
 
 const getRandomPasswords = () => {
     document.getElementById("password-container").style.display = "flex";
+    document.getElementById("password-container2").style.display = "flex";
     givenPassword1.textContent = generatePassword();
     givenPassword2.textContent = generatePassword();
+    givenPassword3.textContent = generatePassword();
+    givenPassword4.textContent = generatePassword();
 }
 
 givenPassword1.addEventListener("click", () => {
@@ -33,3 +38,14 @@ givenPassword2.addEventListener("click", () => {
     navigator.clipboard.writeText(givenPassword2.textContent);
     alert("Password copied!");
 })
+
+givenPassword3.addEventListener("click", () => {
+    navigator.clipboard.writeText(givenPassword3.textContent);
+    alert("Password copied!");
+})
+
+givenPassword4.addEventListener("click", () => {
+    navigator.clipboard.writeText(givenPassword4.textContent);
+    alert("Password copied!");
+})
+
