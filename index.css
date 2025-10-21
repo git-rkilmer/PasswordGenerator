@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
@@ -7,6 +8,9 @@ body {
     justify-content: center;
     margin: 0;
     height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .noncentered-items {
